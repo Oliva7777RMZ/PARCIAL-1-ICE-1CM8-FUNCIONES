@@ -1,0 +1,23 @@
+#include <stdio.h>
+//Declaracion de Funciones para resta
+
+float encontrarresta(float numero1, float numero2);
+int main(){
+    //Codifica 
+    float numero1,numero2,resta;
+    //pide datos
+    printf("Digite el primer numero");
+    scanf("%f",&numero1);
+    printf("Digite el segundo numero");
+    scanf("%f",&numero2);
+    //Formula
+    resta = encontrarresta(numero1,numero2);
+    //Resultado
+    printf("resta = %f",resta);
+    return 0;
+}
+//Definir Funciones
+float encontrarresta(float numero1,float numero2){
+    float resta;
+    return numero1-numero2;
+}
