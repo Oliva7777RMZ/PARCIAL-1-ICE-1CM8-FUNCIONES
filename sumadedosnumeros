@@ -1,0 +1,23 @@
+#include <stdio.h>
+//Declaracion de Funciones
+
+float encontrarsuma(float numero1, float numero2);
+int main(){
+    //Codifica 
+    float numero1,numero2,suma;
+    //pide datos
+    printf("Digite el primer numero");
+    scanf("%f",&numero1);
+    printf("Digite el segundo numero");
+    scanf("%f",&numero2);
+    //Formula
+    suma = encontrarsuma(numero1,numero2);
+    //Resultado
+    printf("suma = %f",suma);
+    return 0;
+}
+//Definir Funciones
+float encontrarsuma(float numero1,float numero2){
+    float suma;
+    return numero1+numero2;
+}
