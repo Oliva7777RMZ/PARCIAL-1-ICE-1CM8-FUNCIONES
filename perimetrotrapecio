@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+//perimetro trapecio
+float atrapecio(float base1,float base2);
+float ladotrapecio(float at,float base2);
+float perimetrotrapecio(float base1,float base2,float lado);
+int main(){
+//compilar
+float base1,base2,at,lado,perimetro;
+//pedir datos
+printf("Ingresa la base1_");
+scanf("%f",&base1);
+printf("Ingresa la base2_");
+scanf("%f",&base2);
+//formula
+at = atrapecio(base1,base2);
+lado = ladotrapecio(at,base2);
+perimetro = perimetrotrapecio(base1,base2,lado);
+//resultado
+printf("lado = %f",lado);
+printf("perimetro = %f",perimetro);
+   
+}
+//Definir
+float atrapecio(float base1,float base2){
+    return (base1 - base2)/2;
+}
+float ladotrapecio(float at,float base2){
+    return sqrt (pow(at,2) + pow (base2/2,2));
+}
+float perimetrotrapecio(float base1,float base2,float lado){
+    return (lado * 2) + (base1 + base2);
+}
