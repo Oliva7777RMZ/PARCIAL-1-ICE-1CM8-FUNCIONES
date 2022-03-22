@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+//area de un trapecio
+float areatrapecio(float base1,float base2,float altura);
+
+int main(){
+    //COPILAR
+    float base1,base2,altura,area;
+    //PEDIR DATOS
+    printf("Ingresa la base_1");
+    scanf("%f",&base1);
+    printf("Ingrese la base_2");
+    scanf("%f",&base2);
+    printf("Ingresa la altura");
+    scanf("%f",&altura);
+    //FORMULA
+    area = areatrapecio(base1,base2,altura);
+    
+    //RESULTADO
+    printf("area = %f",area);
+    return 0;
+}
+//Definir funciones
+float areatrapecio(float base1,float base2,float altura){
+    return ((base1+base2)*altura)/2;
+}
